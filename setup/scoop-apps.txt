@@ -1,0 +1,35 @@
+//scoop required
+main/aria2
+main/pwsh
+main/git
+
+//cli and text editing
+main/neovim
+extras/notepadplusplus
+main/ripgrep
+main/bat
+extras/alacritty
+main/fastfetch
+extras/vscode
+
+//python
+main/uv
+main/ruff
+
+//compilation and runtimes
+main/cmake
+main/vcpkg
+extras/vcredist2022
+versions/dotnet-sdk
+versions/dotnet-sdk-lts
+extras/protobuf
+main/rust-msvc
+main/nodejs
+
+//other
+main/7zip
+main/btop-lhm
+main/nmap
+main/docker
+extras/cura
+extras/vlc
