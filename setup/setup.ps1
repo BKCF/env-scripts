@@ -1,10 +1,10 @@
-$DEV_HOME = "C:\devTest"
+$DEV_HOME = "C:\dev"
 mkdir $DEV_HOME -Force
 
 $scoop_info = Get-Command "scoop" -ErrorAction SilentlyContinue
 if ($scoop_info -eq $null) 
 { 
-	$newScoopHome = Join-Path -Path $DEV_HOME -ChildPath ".scoop"
+	$newScoopHome = "C:\Scoop" #Join-Path -Path $DEV_HOME -ChildPath ".scoop"
 	Write-Host "Unable to find scoop in your PATH. Installing at $($newScoopHome)"
 	[System.Environment]::SetEnvironmentVariable("SCOOP", $newScoopHome, "User")
 	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -52,14 +52,9 @@ mkdir $fastfetch_config_dir -Force
 cp ./fastfetch.jsonc $fastfetch_config_dir/config.jsonc
 
 
-
-
-
-# TODO clone and copy dotenvs
-
 # TODO install wsl
 
-# stuff that I could add but would be a PITA:
+# TODO stuff that I could add but would be a PITA:
 # discord, spotify, steam, chrome, visual studio 22
 #
 #
